@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+</head>
+<body>
+    <h1>Cadastrar usuário</h1>
+    <form action="#" method="post">
+        <!-- Dados pessoais -->
+        <fieldset>
+            <legend>1 Dados pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha"><br><br>
+
+            <label for="confirma-senha">Confirma senha:</label>
+            <input type="password" id="confirma-senha" name="confirma_senha"><br><br>
+
+            Idade: 
+            <input type="radio" id="abaixo-17" name="idade" value="abaixo-17">
+            <label for="abaixo-17">Abaixo ou igual 17</label>
+
+            <input type="radio" id="acima-17" name="idade" value="acima-17">
+            <label for="acima-17">Acima 17</label><br><br>
+        </fieldset>
+
+        <!-- Perfil -->
+        <fieldset>
+            <legend>2 Perfil</legend>
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao"><br><br>
+
+            <label for="perfil-trabalho">Perfil trabalho:</label>
+            <select id="perfil-trabalho" name="perfil_trabalho">
+                <option value="frontend">Front-End Developer</option>
+                <option value="backend">Back-End Developer</option>
+                <option value="fullstack">Full-Stack Developer</option>
+            </select><br><br>
+
+            Interesses:
+            <input type="checkbox" id="programador" name="interesse_programador" value="Programador">
+            <label for="programador">Programador</label><br>
+
+            <input type="checkbox" id="design" name="interesse_design" value="Design">
+            <label for="design">Design</label><br>
+
+            <input type="checkbox" id="analista" name="interesse_analista" value="Analista">
+            <label for="analista">Analista</label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar dados">
+    </form>
+</body>
+</html>
